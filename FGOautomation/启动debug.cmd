@@ -1,0 +1,1 @@
+start dist\UI\UI_debug.exe
