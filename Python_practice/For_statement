@@ -16,3 +16,5 @@ if money == 0 and a != 20:
     print(f'工资全部发完了，还有{20 - a}名员工没发工资！')
 else:
     print(f'工资发放完成，账户余额{money}元。')
+    
+    
