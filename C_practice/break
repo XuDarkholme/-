@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+	int money = 100000;
+	int count = 0;
+	while(money>0){
+		if(money>50000){
+			money -= money*0.05;
+			count++;
+		}
+		else if(money<=50000){
+			if(money-1000<=0)
+				break;
+			money -= 1000;
+			count++;
+		}
+	}
+	printf("可以经过%d次",count);
+	getchar();
+	getchar();
+
+}
