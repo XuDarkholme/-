@@ -90,4 +90,25 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeMapper.insert(employee);
     }
 
+    /**
+     * 启用禁用员工账号
+     * @param status
+     * @param id
+     */
+    @Override
+    public void startOrStop(Integer status, Long id) {
+        /*传统赋值方法
+        Employee employee = new Employee();
+        employee.setStatus(status);
+        employee.setId(id);
+        下面是使用builder进行传参，效果一致*/
+
+        Employee employee = Employee.builder()
+                .status(status)
+                .id(id)
+                .build();
+
+        employeeMapper.update(employee);
+    }
+
 }

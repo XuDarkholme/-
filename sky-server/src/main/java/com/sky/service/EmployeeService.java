@@ -15,4 +15,6 @@ public interface EmployeeService {
 
     //新增员工
     void save(EmployeeDTO employeeDTO);
+
+    void startOrStop(Integer status, Long id);
 }

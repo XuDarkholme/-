@@ -24,4 +24,12 @@ public interface EmployeeMapper {
             "values " +
             "(#{name},#{username},#{password},#{phone},#{sex},#{idNumber},#{status},#{createTime},#{updateTime},#{createUser},#{updateUser})")
     void insert(Employee employee);
+
+
+    /**
+     * 根据主键动态修改属性
+     * @param employee
+     */
+
+    void update(Employee employee);
 }
