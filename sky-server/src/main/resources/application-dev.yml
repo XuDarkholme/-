@@ -6,3 +6,21 @@ sky:
     database: sky_take_out
     username: root
     password: 56
+
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 56
+    database: 10
+
+
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tFsXSJnN7LLKNXzUB3Y
+    access-key-secret: uoa21v7nnhxaRPjGk6K2I8SJY0ClFF
+    bucket-name: hmleadnews365
+
+  wechat:
+    appid: wx6117aef9cf509156
+    secret: 31b324315ea8ac5528a0be6b67eeba9a
